@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import {HashLink} from 'react-router-hash-link'
 import '../styles/Header.scss'
 
 
@@ -8,10 +9,10 @@ const Header = () => {
     <nav>
       <h1>TechyStar.</h1>
       <main>
-        <Link to={"/#home"}>Home</Link>
+        <HashLink to={"/#home"}>Home</HashLink>
         <Link to={"/contact"}>Contact</Link>
-        <Link to={"/#about"}>About</Link>
-        <Link to={"/#brands"}>Brands</Link>
+        <HashLink to={"/#about"}>About</HashLink>
+        <HashLink to={"/#brands"}>Brands</HashLink>
         <Link to={"/services"}>Services</Link>
       </main>
     </nav>
@@ -20,5 +21,7 @@ const Header = () => {
 
 export default Header;
 
+
+//npm i react-router-hash-link
 
 //# id -- scroll behavior
