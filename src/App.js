@@ -6,13 +6,15 @@ import Footer from "./component/Footer";
 import "./styles/App.scss"
 import "./styles/Header.scss"
 import "./styles/Footer.scss"
+import "./styles/contact.scss"
+import Contact from "./component/Contact";
 function App() {
   return (
  <Router>
   <Header/>
   <Routes>
     <Route path="/" element={<Home/>}/>
-    <Route path="/" element={<Home/>}/>
+    <Route path="/contact" element={<Contact/>}/>
 
   </Routes>
 <Footer/>
